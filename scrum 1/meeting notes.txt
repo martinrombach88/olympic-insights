@@ -1,0 +1,15 @@
+API, HTTP calls to a database
+
+A frontend that searches for olympics information
+
+Interface between the db and the api with an orm (i.e. entity framework)
+
+Slices of Data:
+Year
+Athlete
+Location
+Sport
+
+Focus on DB
+
+Entity, MS SQL .NET, IIS, React or Blazor, Use Third Normal Form
