@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="microsoft.data.sqlclient" Version="5.1.5" />
+    <PackageReference Include="microsoft.entityframeworkcore" Version="8.0.1" />
+  </ItemGroup>
+
 </Project>
