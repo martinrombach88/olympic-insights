@@ -1,0 +1,3 @@
+1. Build an API to create datasets in Microsoft Server
+2. Define a connection to an MS SQL server in the Azure Docker (use .NET)
+3. Build objects for the ORM in C#
