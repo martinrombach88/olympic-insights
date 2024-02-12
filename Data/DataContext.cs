@@ -1,8 +1,10 @@
-// namespace Olympics.Data
-// {
+using Microsoft.EntityFrameworkCore;
 
-//     public class DataContext : DbContext
-//     {
+namespace Olympics.Data
+{
 
-//     }
-// }
+    public class DataContext : DbContext
+    {
+
+    }
+}

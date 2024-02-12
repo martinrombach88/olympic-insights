@@ -8,7 +8,24 @@ installed entity framework ->
 dotnet add package microsoft.entityframeworkcore
 
 if you want to add dapper later->
-dotnet add package Dapper
+dotnet add package Dapper 
+
+Olympics Table, 
 
 
 2. Build objects for the ORM in C#
+Database name? Olympics
+
+Tables Example:
+
+Location
+Games, Year, Season, City
+
+Athlete
+Sex, Age, Height, Weight, Team
+
+Event
+Sport, Event, Description
+
+Result
+Event, Team, Athlete, Medal
