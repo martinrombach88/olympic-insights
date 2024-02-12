@@ -1,0 +1,40 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Olympics.Models;
+
+namespace Olympics.Data
+{
+    //my class entity context EntityContext extends DbContext, which is imported from entity framework. : = extends
+    public class EntityContext : DbContext
+    {
+        //My class Athlete is passed as an argument to the type DbSet,
+        //so entity can make table fields from the class
+        public DbSet<Athlete> Athlete {get; set;}
+
+        //?
+        private IConfiguration _config;
+        public EntityContext(IConfiguration config) {
+            _config = config;
+        }
+
+        //OnConfiguring - called on instantiation instead of a constructor
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            //if there isn't a config 
+            if(!optionsBuilder.IsConfigured) 
+            {
+                //pass connection string in appsettings.json to 
+                //UseSQLServer and enable repeat retries
+                optionsBuilder.UseSqlServer(_config.GetConnectionString("DefaultConnection"), options=> options.EnableRetryOnFailure());
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("OlympicsSchema");
+     
+            modelBuilder.Entity<Athlete>().ToTable("Athlete", "");
+        }
+
+    }
+}

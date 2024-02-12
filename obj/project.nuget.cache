@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sll1Oq9kxE7hJIifLYoCyiBkJKtnt4zyEWk231eL6ybMOVgKggqf4iEkNIZoZeXR9Int/+vvVY5+Qys8tW7q2Q==",
+  "dgSpecHash": "/fXsSqWLpvtyCkG/vZ/Wm7IKC1DZp200CauoWGVxImWIQyeDBbTOqtlOH9afQ+A8WWxB2SUBs3aSDt3yD1b0kw==",
   "success": true,
   "projectFilePath": "/Users/martin/Code/olympic-insights/olympic-insights.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,11 @@
     "/Users/martin/.nuget/packages/microsoft.entityframeworkcore/8.0.1/microsoft.entityframeworkcore.8.0.1.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.1/microsoft.entityframeworkcore.abstractions.8.0.1.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.1/microsoft.entityframeworkcore.analyzers.8.0.1.nupkg.sha512",
+    "/Users/martin/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.1/microsoft.entityframeworkcore.relational.8.0.1.nupkg.sha512",
+    "/Users/martin/.nuget/packages/microsoft.entityframeworkcore.sqlserver/8.0.1/microsoft.entityframeworkcore.sqlserver.8.0.1.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "/Users/martin/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/Users/martin/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
