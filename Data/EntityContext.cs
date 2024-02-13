@@ -11,7 +11,7 @@ namespace Olympics.Data
         //so entity can make table fields from the class
         public DbSet<Athlete> Athlete {get; set;}
 
-        //?
+        //Create a field for the instance of entity framework to take a configuration file / object (?)
         private IConfiguration _config;
         public EntityContext(IConfiguration config) {
             _config = config;
@@ -31,6 +31,7 @@ namespace Olympics.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //do I need this?
             modelBuilder.HasDefaultSchema("OlympicsSchema");
      
             modelBuilder.Entity<Athlete>().ToTable("Athlete", "");
