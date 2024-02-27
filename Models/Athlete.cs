@@ -1,8 +1,10 @@
-namespace Olympics.Models{
+namespace OlympicInsights.Models{
     public class Athlete
     {
         //the primary key is the athlete id - how to set on init?  
         public int AthleteId { get; set;}
+
+        public string name {get; set; } = "";
         public string gender {get; set;} = "";
         public string team {get; set;} = "";
         public int height { get; set;}

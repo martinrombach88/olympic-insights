@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Olympics.Models;
-
-namespace Olympics.Data
+// using OlympicInsights.Models;
+/*
+namespace OlympicInsights.Data
 {
-    //my class entity context EntityContext extends DbContext, which is imported from entity framework. : = extends
-    public class EntityContext : DbContext
+    //my class entity context OlympicContext extends DbContext, which is imported from entity framework. : = extends
+    public class OlympicContext : DbContext
     {
         //My class Athlete is passed as an argument to the type DbSet,
         //so entity can make table fields from the class
@@ -13,7 +13,7 @@ namespace Olympics.Data
 
         //Create a field for the instance of entity framework to take a configuration file / object (?)
         private IConfiguration _config;
-        public EntityContext(IConfiguration config) {
+        public OlympicContext(IConfiguration config) {
             _config = config;
         }
 
@@ -39,3 +39,4 @@ namespace Olympics.Data
 
     }
 }
+*/

@@ -24,7 +24,7 @@ code first approach (recommended for ef)
 to do
 √ 1. New SQL container called 'olympic_history' or 'olympics_data' with Microsoft SQL server installed. 
 
-3. Create and Run a container for the Image:
+Create and Run a container for the Image:
 docker run -e "ACCEPT_EULA=1" -e "MSSQL_USER=SA" -e "MSSQL_SA_PASSWORD=SQLConnect1" -e "MSSQL_PID=Developer" -p 1433:1433 -d --name=sql_connect mcr.microsoft.com/azure-sql-edge
 
 breakdown:
@@ -35,5 +35,12 @@ breakdown:
 -d --name=sql_connect mcr.microsoft.com/azure-sql-edge -> set name
 
 2. Create a database in the container using EF (model as source of truth, code first)
+- when successful, you'll see an empty table of athletes
+
+breakdown:
+1. create a class that extends db context
+2. install the extension for the database you want to use (e.g. 
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer)
+
 
 
