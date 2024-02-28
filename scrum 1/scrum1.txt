@@ -54,7 +54,7 @@ This defines your app as a web application.
 Note: you used 'dotnet new console -o' i.e the console template when starting. 
 Maybe you should be using the web app template?
 
-
+migrations should begin on build 
 
 
 
