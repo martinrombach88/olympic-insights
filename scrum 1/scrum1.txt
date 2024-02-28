@@ -42,5 +42,19 @@ breakdown:
 2. install the extension for the database you want to use (e.g. 
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer)
 
+next: add connection in program.cs (see contoso project)
+!bug! - ASP.NET Core Web API - The name 'WebApplication' does not exist in the current context WebApi
+this bug appeared in Program.cs next to this line: var builder = WebApplication.CreateBuilder(args);
+
+https://stackoverflow.com/questions/71800753/asp-net-core-web-api-the-name-webapplication-does-not-exist-in-the-current-c
+√ Solved: update csproj file:
+From: <Project Sdk="Microsoft.NET.Sdk">
+To: <Project Sdk="Microsoft.NET.Sdk.Web">
+This defines your app as a web application.
+Note: you used 'dotnet new console -o' i.e the console template when starting. 
+Maybe you should be using the web app template?
+
+
+
 
 
