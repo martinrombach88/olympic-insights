@@ -52,9 +52,13 @@ From: <Project Sdk="Microsoft.NET.Sdk">
 To: <Project Sdk="Microsoft.NET.Sdk.Web">
 This defines your app as a web application.
 Note: you used 'dotnet new console -o' i.e the console template when starting. 
-Maybe you should be using the web app template?
+Maybe you should be using the web app template? 
 
-migrations should begin on build 
+Next:
 
+- define connection as environment variable
 
+- follow 'create migration' from udemy / contoso (using onConfiguring)
+
+we also have onModelCreate()
 

@@ -1,16 +1,18 @@
 namespace OlympicInsights.Models{
     public class Athlete
     {
-        //the primary key is the athlete id - how to set on init?  
+        //ef convention -> if a field has id in it, it is a key. It'll use
+        //the first it finds.
         public int AthleteId { get; set;}
-
-        public string name {get; set; } = "";
-        public string gender {get; set;} = "";
-        public string team {get; set;} = "";
-        public int height { get; set;}
-        public int weight { get; set;}
-        public string[] sportEvents {get; set;} = [];
-        public string[] medals {get; set;} = [];
+        public string Name {get; set; } = "";
+        public string Gender {get; set;} = "";
+        public string Team {get; set;} = "";
+        public int Height { get; set;}
+        public int Weight { get; set;}
+        public string[] SportEvents {get; set;} = [];
+        
+        //medals is nullable 
+        public string?[] Medals {get; set;} = []; 
 
        
     }
