@@ -62,13 +62,14 @@ Next:
 create the database using the migration
 1. add the migration to the project 
 
-!bug!
-An error occurred while accessing the Microsoft.Extensions.Hosting services. Continuing without the application service provider. Error: 'AddDbContext' was called with configuration, but the context type 'OlympicContext' only declares a parameterless constructor. This means that the configuration passed to 'AddDbContext' will never be used. If configuration is passed to 'AddDbContext', then 'OlympicContext' should declare a constructor that accepts a DbContextOptions<OlympicContext> and must pass it to the base constructor for DbContext.
-Unable to create a 'DbContext' of type ''. The exception 'No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.' was thrown while attempting to create an instance. For the different patterns supported at design time, see https://go.microsoft.com/fwlink/?linkid=851728
+- get connection string usually takes a direct string. if you were to hard code this, it would probably work.
+√sub goal: console app logging environment variable
+
+Generated environment variable and passed to db context.
 
 !bug!
-An error occurred while accessing the Microsoft.Extensions.Hosting services. Continuing without the application service provider. Error: The entry point exited without ever building an IHost.
-Unable to create a 'DbContext' of type ''. The exception 'Unable to resolve service for type 'Microsoft.Extensions.Configuration.IConfiguration' while attempting to activate 'OlympicInsights.Data.OlympicContext'.' was thrown while attempting to create an instance. For the different patterns supported at design time, see https://go.microsoft.com/fwlink/?linkid=851728
+An error occurred while accessing the Microsoft.Extensions.Hosting services. Continuing without the application service provider. Error: The entity type 'OlympicContext' was not found. Ensure that the entity type has been added to the model.
+
 
 
 2. create db and schema in container db using migration + connection
