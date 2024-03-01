@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("olympic-insights")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d569fff18751e25fff355e509810c402f1fc76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55728fbcae7f5c38d79a7ff9a16baf9e73ee58c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("olympic-insights")]
 [assembly: System.Reflection.AssemblyTitleAttribute("olympic-insights")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
